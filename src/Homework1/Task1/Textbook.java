@@ -10,7 +10,7 @@ public class Textbook extends Book {
 
 
     public String getInfo() {
-        return getTitle() + ", " + "published in " + getYear() + " by " + getAuthor() + " Subject: " + subject;
+        return super.getInfo() + subject;
     }
 
     public String getSubject() {

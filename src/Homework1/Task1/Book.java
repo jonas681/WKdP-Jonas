@@ -10,7 +10,7 @@ public class Book extends Publication {
     }
     public String getInfo(){
 
-        return " by " + author;
+        return super.getInfo() + " by " + author;
     }
 
     public String getAuthor() {
