@@ -7,6 +7,7 @@ public class Main {
         System.out.println(m1.getType()); //zurückgegeben wird Email.
         // getType() ist in Message(Oberklasse) vorhanden, so ist der Aufruf auf jeden Fall schon mal kompilierfähig.
         // Da der dynamische Typ von m1 Email ist, wird dann demtentsprechend auch Email zurückgegeben und nicht Gerneric
+        //Liegt an der Dynamischen Bindung
         System.out.println(m2.getType()); //zurückgegeben wird SMS gleiche Erklärung wie bei m1
         //m1.send(); //Kann nicht direkt aufgerufen werden, da send() nicht in Message vorhanden ist.
         // m1 ist vom statischen Typ ein Message-Objekt, so ist dieser Aufruf nicht kompilierfähig.
